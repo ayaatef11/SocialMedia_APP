@@ -17,3 +17,5 @@ node_modules/
 *.sw?
 migrations/
 .vs/
+*/obj/
+*/bin/

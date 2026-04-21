@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SocialMedia.Application.Abstractions.PostAbstractions;
 
 namespace SocialMedia.API.Controllers;
 [ApiController]

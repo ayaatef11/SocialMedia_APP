@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SocialMedia.Infrastructure.Domain.Entities.Business.Profiles;
+using SocialMedia.Infrastructure.Domain.Entities.Business.Stories;
 
 namespace SocialMedia.Infrastructure.Persistence.Configuration.Business;
     public class StoryConfiguration : IEntityTypeConfiguration<Story>

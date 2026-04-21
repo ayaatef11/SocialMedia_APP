@@ -1,5 +1,5 @@
 ﻿namespace SocialMedia.Application.Abstractions;
-public interface IBlockService : IMainRepository<Block>
+public interface IBlockService  
 {
     ValueTask<string> BlockAsync(BlockDTO block);
     ValueTask<string> UnBlockAsync(BlockDTO block);

@@ -2,17 +2,8 @@
 using Microsoft.Extensions.Configuration;
 
 namespace SocialMedia.Application.Implementations;
-public class CommentLikeService : MainRepository<CommentLikes>, ICommentLikeService
+public class CommentLikeService(AppdbContext _context) :  ICommentLikeService
 {
-    private readonly AppdbContext _context;
-    private readonly IConfiguration _configuration;
-
-    public CommentLikeService(AppdbContext context, IConfiguration configuration) :base(context, configuration)
-    {
-        this._context = context;
-        this._configuration = configuration;
-    }
-
     public async ValueTask<string> DisLikeAsync(LikeCommentDTO like)
     {
         var _like = await _context.CommentLikes.SingleOrDefaultAsync(x => x.Id == like.CommentId);

@@ -18,3 +18,6 @@ global using SocialMedia.Infrastructure.Domain.DTOs.SavePosts;
 global using SocialMedia.Infrastructure.Domain.DTOs.Share;
 global using SocialMedia.Infrastructure.Domain.DTOs.Story;
 
+global using SocialMedia.Application.Abstractions.PostAbstractions;
+global using SocialMedia.Application.Helpers.Media;
+global using SocialMedia.Infrastructure.Repository;

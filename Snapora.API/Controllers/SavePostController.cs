@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SocialMedia.Application.Abstractions.PostAbstractions;
 namespace SocialMedia.API.Controllers;
 [ApiController]
 [Route("api/SavePost")]
@@ -27,7 +26,10 @@ public class SavePostController(ISavePostService _SavePostService) : ControllerB
         var posts = await _SavePostService.GetPosts(Id);
         return posts.Any() ?
             Ok(posts) :
-            NotFound("No Saved Posts Found For This User");
+            NotFound(new Result
+            {
+                Message = "No Saved Posts Found For This User"
+            });
     }
 
     [HttpDelete("UnSave")]

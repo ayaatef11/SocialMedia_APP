@@ -5,7 +5,6 @@ namespace SocialMedia.API.Controllers;
 [Route("api/Follow")]
 public class FollowController(IFollowerService _FollowerService) : ControllerBase
 {
-
     [HttpPost("request")]
     public async Task<IActionResult> SendRequest(FollowDTO follow)
     {
@@ -14,7 +13,10 @@ public class FollowController(IFollowerService _FollowerService) : ControllerBas
 
         var requestOperation = await _FollowerService.RequestFollowAsync(follow);
         return requestOperation == "Successfully" ?
-            Ok("Follow Sent Successfully")
+            Ok(new Result
+            {
+                Message = "Follow Sent Successfully"
+            })
             : BadRequest(requestOperation);
     }
 
@@ -26,7 +28,10 @@ public class FollowController(IFollowerService _FollowerService) : ControllerBas
 
         var acceptOperation = await _FollowerService.AcceptFollowAsync(follow);
         return acceptOperation == "Accepted" ?
-           Ok("Follow Accepted Successfully")
+           Ok(new Result
+           {
+               Message = "Follow Accepted Successfully"
+           })
            : BadRequest(acceptOperation);
     }
 
@@ -38,7 +43,10 @@ public class FollowController(IFollowerService _FollowerService) : ControllerBas
 
         var rejectOperation = await _FollowerService.RejectFollowAsync(follow);
         return rejectOperation == "Rejected" ?
-           Ok("Follow Rejected Successfully")
+           Ok(new Result
+           {
+               Message = "Follow Rejected Successfully"
+           })
            : BadRequest(rejectOperation);
     }
 
@@ -50,7 +58,10 @@ public class FollowController(IFollowerService _FollowerService) : ControllerBas
 
         var unfollowOperation = await _FollowerService.UnFollowAsync(follow);
         return unfollowOperation == "Successfully" ?
-           Ok("Follow Removed Successfully")
+           Ok(new Result
+           {
+               Message = "Follow Removed Successfully"
+           })
            : BadRequest(unfollowOperation);
     }
 
@@ -62,6 +73,9 @@ public class FollowController(IFollowerService _FollowerService) : ControllerBas
 
         var followers = await _FollowerService.GetFollowerAsync(id);
         return followers.Any() ? Ok(followers)
-            : NotFound("User Not Has Any Followes");
+            : NotFound(new Result
+            {
+                Message = "User Not Has Any Followes"
+            });
     }
 }

@@ -1,7 +1,7 @@
 ﻿using SocialMedia.Infrastructure.Domain.Entities.Base;
 using SocialMedia.Infrastructure.Domain.Entities.Security;
 
-namespace SocialMedia.Infrastructure.Domain.Entities.Business.Profiles
+namespace SocialMedia.Infrastructure.Domain.Entities.Business.Stories
 {
     public class Story : BaseEntity<Guid>
     {

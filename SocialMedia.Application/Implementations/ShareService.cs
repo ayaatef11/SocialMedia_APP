@@ -3,16 +3,8 @@ using Microsoft.Extensions.Configuration;
 using SocialMedia.Application.Abstractions.PostAbstractions;
 
 namespace SocialMedia.Application.Implementations;
-public class ShareService : MainRepository<Share>, ISharePostService
+public class ShareService(AppdbContext _context) :  ISharePostService
 {
-    private readonly AppdbContext _context;
-    private readonly IConfiguration _configuration;
-    public ShareService(AppdbContext context, IConfiguration configuration) :base(context, configuration)
-    {
-        this._context = context;
-        this._configuration = configuration;
-    }
-
     public async ValueTask<string> Revoke(RevokeShareDTO revoke)
     {
         var share = await _context.Shares.SingleOrDefaultAsync(x => x.Id == revoke.Id);

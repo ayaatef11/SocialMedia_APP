@@ -12,7 +12,11 @@ public sealed class Post : BaseEntity<Guid>
     public FeelingState? FeelingState { set; get; }
     public string Title { set; get; } = string.Empty;
     public string? Text { set; get; } = string.Empty;
-
+    public List<string>? MediaUrls {  set; get; }
+    public bool IsHidden {  set; get; }=false;
+    public Guid? SaverId {  set; get; }
+    public bool IsSaved { set; get; } = false;
+    public bool IsReel { set; get; } = false;
     #region Relationships
     public Guid SocialMediaUserId { set; get; }
     public User SocialMediaUser { set; get; }

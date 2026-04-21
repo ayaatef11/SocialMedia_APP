@@ -399,6 +399,9 @@
             "projectReferences": {
               "F:\\2-back-end\\SocialMedia_APP\\Backend\\Snapora.Infrastructure\\SocialMedia.Infrastructure.csproj": {
                 "projectPath": "F:\\2-back-end\\SocialMedia_APP\\Backend\\Snapora.Infrastructure\\SocialMedia.Infrastructure.csproj"
+              },
+              "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
+                "projectPath": "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
               }
             }
           }
@@ -552,7 +555,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Core\\SocialMedia.Core.csproj": {
+                "projectPath": "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Core\\SocialMedia.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

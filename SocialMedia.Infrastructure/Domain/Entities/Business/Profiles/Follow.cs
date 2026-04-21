@@ -2,17 +2,15 @@
 using SocialMedia.Infrastructure.Domain.Entities.Security;
 using SocialMedia.Infrastructure.Domain.Enums;
 
-namespace SocialMedia.Infrastructure.Domain.Entities.Business.Profiles
+namespace SocialMedia.Infrastructure.Domain.Entities.Business.Profiles;
+public sealed class Follow : BaseEntity<Guid>
 {
-    public sealed class Follow : BaseEntity<Guid>
-    {
-        public FollowState FollowState { set; get; }
+    public FollowState FollowState { set; get; }
 
-        #region RelationShip
-        public Guid? FollowerId { set; get; }
-        public Guid ?FollowingId { set;get; }
-        public User? Follower { set;get; }
-        public User ?Following { set;get; }
-        #endregion
-    }
+    #region RelationShip
+    public Guid? FollowerId { set; get; }
+    public Guid? FollowingId { set; get; }
+    public User? Follower { set; get; }
+    public User? Following { set; get; }
+    #endregion
 }

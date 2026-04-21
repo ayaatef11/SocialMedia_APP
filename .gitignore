@@ -10,12 +10,9 @@ node_modules/
 # IDE specific
 .idea/
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
+
 *.sln
-*.sw?
 migrations/
-vs/
+.vs/
 **/obj/
 **/bin/

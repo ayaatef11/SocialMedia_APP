@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Snapora.Infrastructure\SocialMedia.Infrastructure.csproj" />
+    <ProjectReference Include="..\SocialMedia.Infrastructure\SocialMedia.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

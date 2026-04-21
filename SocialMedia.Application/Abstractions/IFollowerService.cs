@@ -1,5 +1,5 @@
 ﻿namespace SocialMedia.Application.Abstractions;
-public interface IFollowerService : IMainRepository<Follow>
+public interface IFollowerService 
 {
     ValueTask<string> UnFollowAsync(FollowDTO follow);
     ValueTask<string> AcceptFollowAsync(FollowDTO follow);

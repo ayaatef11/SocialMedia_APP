@@ -2466,6 +2466,9 @@
           "projectReferences": {
             "F:\\2-back-end\\SocialMedia_APP\\Backend\\Snapora.Infrastructure\\SocialMedia.Infrastructure.csproj": {
               "projectPath": "F:\\2-back-end\\SocialMedia_APP\\Backend\\Snapora.Infrastructure\\SocialMedia.Infrastructure.csproj"
+            },
+            "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
+              "projectPath": "F:\\2-back-end\\SocialMedia_APP\\Backend\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
             }
           }
         }

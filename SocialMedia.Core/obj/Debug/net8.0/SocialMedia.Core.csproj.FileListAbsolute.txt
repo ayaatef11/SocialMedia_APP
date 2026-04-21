@@ -11,3 +11,16 @@ F:\2-back-end\SnaporaSolution\Backend\Snapora.Core\obj\Debug\net8.0\SocialMedia.
 F:\2-back-end\SnaporaSolution\Backend\Snapora.Core\obj\Debug\net8.0\refint\SocialMedia.Core.dll
 F:\2-back-end\SnaporaSolution\Backend\Snapora.Core\obj\Debug\net8.0\SocialMedia.Core.pdb
 F:\2-back-end\SnaporaSolution\Backend\Snapora.Core\obj\Debug\net8.0\ref\SocialMedia.Core.dll
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\bin\Debug\net8.0\SocialMedia.Core.deps.json
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\bin\Debug\net8.0\SocialMedia.Core.dll
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\bin\Debug\net8.0\SocialMedia.Core.pdb
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.csproj.AssemblyReference.cache
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.AssemblyInfoInputs.cache
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.AssemblyInfo.cs
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.sourcelink.json
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.dll
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\refint\SocialMedia.Core.dll
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\SocialMedia.Core.pdb
+F:\2-back-end\SocialMedia_APP\Backend\SocialMedia.Core\obj\Debug\net8.0\ref\SocialMedia.Core.dll

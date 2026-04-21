@@ -3,17 +3,8 @@ using Microsoft.Extensions.Configuration;
 using SocialMedia.Application.Abstractions.PostAbstractions;
 
 namespace SocialMedia.Application.Implementations;
-public class SavePostService : MainRepository<SavePost>, ISavePostService
-{
-    private readonly AppdbContext _context;
-    private readonly IConfiguration configuration;
-
-    public SavePostService(AppdbContext context, IConfiguration configuration) : base(context, configuration)
-    {
-        this._context = context;
-        this.configuration = configuration;
-    }
-
+public class SavePostService (AppdbContext _context) :ISavePostService
+{ 
     public async ValueTask<IEnumerable<Post>> GetPosts(Guid userId)
     {
         var posts = await _context.SavePosts

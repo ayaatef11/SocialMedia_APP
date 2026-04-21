@@ -1041,33 +1041,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "SocialMedia.Core/1.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.5",
-          "Microsoft.Extensions.Identity.Core": "8.0.8"
-        },
-        "runtime": {
-          "SocialMedia.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SocialMedia.Infrastructure/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.1.66",
-          "Microsoft.AspNetCore.Http.Features": "5.0.17",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.8",
-          "Microsoft.Data.SqlClient": "6.0.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
-        },
-        "runtime": {
-          "SocialMedia.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1659,16 +1632,6 @@
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "SocialMedia.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SocialMedia.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SocialMedia.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

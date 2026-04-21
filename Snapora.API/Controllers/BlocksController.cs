@@ -15,16 +15,28 @@ public class BlocksController(IBlockService _BlockService) : ControllerBase
         var blockOperation = await _BlockService.BlockAsync(block);
 
         if (blockOperation == "UserFF")
-            return BadRequest("User Is not found");
+            return BadRequest(new Result
+            {
+                Message = "User Is not found"
+            });
         if (blockOperation == "UserAB")
-            return BadRequest("User Alreay Blocked");
+            return BadRequest(new Result
+            {
+                Message = "User Alreay Blocked"
+            });
 
         if (blockOperation == "UserAA")
-            return BadRequest("User Can not block itself");
+            return BadRequest(new Result
+            {
+                Message = "User Can not block itself"
+            });
 
 
         return blockOperation == "Successfully" ?
-            Ok("User Blocked Successfully")
+            Ok(new Result
+            {
+                Message = "User Blocked Successfully"
+            })
             : BadRequest(blockOperation);
     }
 
@@ -36,10 +48,16 @@ public class BlocksController(IBlockService _BlockService) : ControllerBase
 
         var unBlockOperation = await _BlockService.UnBlockAsync(block);
         if (unBlockOperation == "UserNB")
-            return Ok("User Not Blocked");
+            return Ok(new Result
+            {
+                Message = "User Not Blocked"
+            });
 
         return unBlockOperation == "Successfully" ?
-            Ok("User UnBlocked Successfully")
+            Ok(new Result
+            {
+                Message = "User UnBlocked Successfully"
+            })
             : BadRequest(unBlockOperation);
     }
 
@@ -52,6 +70,9 @@ public class BlocksController(IBlockService _BlockService) : ControllerBase
         var blockedUsers = await _BlockService.GetBlockedUserAsync(BlockerId);
 
         return blockedUsers.Any() ? Ok(blockedUsers) :
-            NotFound("User Not Blocked Anyone");
+            NotFound(new Result
+            {
+                Message = "User Not Blocked Anyone"
+            });
     }
 }

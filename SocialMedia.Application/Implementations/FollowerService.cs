@@ -2,16 +2,8 @@
 using Microsoft.Extensions.Configuration;
 
 namespace SocialMedia.Application.Implementations;
-public class FollowerService : MainRepository<Follow>, IFollowerService
-{
-    private readonly AppdbContext _context;
-    private readonly IConfiguration _configuration;
-    public FollowerService(AppdbContext context, IConfiguration configuration) :base(context, configuration)
-    {
-        this._context = context;
-        this._configuration = configuration;
-    }
-
+public class FollowerService(AppdbContext _context) :  IFollowerService
+{ 
     public async ValueTask<string> AcceptFollowAsync(FollowDTO follow)
     {
         var _sender = await _context.Users.SingleOrDefaultAsync(x => x.Id == follow.Sender);

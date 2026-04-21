@@ -1,10 +1,8 @@
-﻿using SocialMedia.Infrastructure.Domain.Entities.Business.Posts;
-using SocialMedia.Infrastructure.Repository;
-
-namespace SocialMedia.Application.Abstractions;
-public interface ICommentService : IMainRepository<Comment>
+﻿namespace SocialMedia.Application.Abstractions;
+public interface ICommentService  
 {
-    //add a comment
-    //delete comment
-    //show comments
+    public ValueTask<int> AddComment(AddCommentDTO comment);
+    public ValueTask<int> EditComment(EditCommentDTO comment);
+    public ValueTask<int> DeleteComment(Guid id);
+    ValueTask<IEnumerable<Comment>> GetComments(Guid id);
 }

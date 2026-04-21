@@ -1,0 +1,20 @@
+﻿global using SocialMedia.Infrastructure.Domain.DTOs.Comment;
+global using SocialMedia.Infrastructure.Domain.Entities.Business.Posts;
+global using SocialMedia.Infrastructure.Repository;
+global using SocialMedia.Infrastructure.Domain.DTOs.Block;
+global using SocialMedia.Infrastructure.Domain.Entities.Business.Profiles;
+global using SocialMedia.Infrastructure.Domain.Entities.Security;
+global using SocialMedia.Infrastructure.Domain.DTOs.Authentication;
+global using SocialMedia.Application.Abstractions;
+global using SocialMedia.Application.Helpers.Messages;
+global using SocialMedia.Application.Helpers.Token;
+global using SocialMedia.Infrastructure.Persistence.Context;
+global using SocialMedia.Application.Helpers.Options;
+global using SocialMedia.Infrastructure.Domain.DTOs.Followers;
+global using SocialMedia.Infrastructure.Domain.Enums;
+global using SocialMedia.Infrastructure.Domain.DTOs.Profile;
+global using SocialMedia.Infrastructure.Domain.DTOs.SavePosts;
+global using SocialMedia.Infrastructure.Domain.DTOs.Share;
+global using SocialMedia.Infrastructure.Domain.DTOs.Story;
+global using SocialMedia.Application.Helpers.Token.JWTOptions;
+

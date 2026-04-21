@@ -1,0 +1,576 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\2-back-end\\SnaporaSolution\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.api\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|solutionrelative:snapora.api\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\postabstractions\\isavepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\postabstractions\\isavepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\savepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\savepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\shareservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\shareservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\helpers\\token\\generatetokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\helpers\\token\\generatetokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\helpers\\token\\jwtoption\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\helpers\\token\\jwtoption\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\helpers\\options\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\helpers\\options\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\helpers\\messages\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\helpers\\messages\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\helpers\\background\\storycleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\helpers\\background\\storycleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\istoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\istoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\postabstractions\\isharepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\postabstractions\\isharepostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\postabstractions\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\postabstractions\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\postabstractions\\ipostlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\postabstractions\\ipostlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\ifollowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\ifollowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\icommentlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\icommentlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\iblockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\iblockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\abstractions\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\abstractions\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\commentlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\commentlikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\blockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\blockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|solutionrelative:snapora.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.application\\socialmedia.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{102F51CF-4D85-4B81-828D-FF12E65759DE}|Snapora.Application\\SocialMedia.Application.csproj|solutionrelative:snapora.application\\socialmedia.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.api\\controllers\\blockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|solutionrelative:snapora.api\\controllers\\blockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|f:\\2-back-end\\snaporasolution\\backend\\snapora.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B0E1DA8-F0D4-4C44-8BDD-2A7A248149A9}|Snapora.API\\SocialMedia.API.csproj|solutionrelative:snapora.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Globals.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Globals.cs",
+              "RelativeDocumentMoniker": "Snapora.API\\Globals.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Globals.cs",
+              "RelativeToolTip": "Snapora.API\\Globals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:40:56.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SavePostService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\SavePostService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\SavePostService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\SavePostService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\SavePostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:38:31.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StoryService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\StoryService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\StoryService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\StoryService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\StoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:38:17.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "Snapora.Application\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:37:48.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "Snapora.Application\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:37:46.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JWTOption.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Token\\JWTOption\\JWTOption.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Helpers\\Token\\JWTOption\\JWTOption.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Token\\JWTOption\\JWTOption.cs",
+              "RelativeToolTip": "Snapora.Application\\Helpers\\Token\\JWTOption\\JWTOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:37:24.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ISavePostService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\ISavePostService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\PostAbstractions\\ISavePostService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\ISavePostService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\PostAbstractions\\ISavePostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:57.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ForgotPassword.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Messages\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Helpers\\Messages\\ForgotPassword.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Messages\\ForgotPassword.cs",
+              "RelativeToolTip": "Snapora.Application\\Helpers\\Messages\\ForgotPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:37:10.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StoryCleanupService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Background\\StoryCleanupService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Helpers\\Background\\StoryCleanupService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Background\\StoryCleanupService.cs",
+              "RelativeToolTip": "Snapora.Application\\Helpers\\Background\\StoryCleanupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:36:34.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShareService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\ShareService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\ShareService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\ShareService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\ShareService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:35:15.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IStoryService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IStoryService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IStoryService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IStoryService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IStoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:36:27.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SMTPOptions.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Options\\SMTPOptions.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Helpers\\Options\\SMTPOptions.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Options\\SMTPOptions.cs",
+              "RelativeToolTip": "Snapora.Application\\Helpers\\Options\\SMTPOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:31:14.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenerateTokenHelper.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Token\\GenerateTokenHelper.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Helpers\\Token\\GenerateTokenHelper.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Helpers\\Token\\GenerateTokenHelper.cs",
+              "RelativeToolTip": "Snapora.Application\\Helpers\\Token\\GenerateTokenHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:14:19.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISharePostService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\ISharePostService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\PostAbstractions\\ISharePostService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\ISharePostService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\PostAbstractions\\ISharePostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:35:04.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SocialMedia.Application",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\SocialMedia.Application.csproj",
+              "RelativeDocumentMoniker": "Snapora.Application\\SocialMedia.Application.csproj",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\SocialMedia.Application.csproj",
+              "RelativeToolTip": "Snapora.Application\\SocialMedia.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-21T07:20:20.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IProfileService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IProfileService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IProfileService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IProfileService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IProfileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:51.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\IPostService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\PostAbstractions\\IPostService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\IPostService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\PostAbstractions\\IPostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:44.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IPostLikeService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\IPostLikeService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\PostAbstractions\\IPostLikeService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\PostAbstractions\\IPostLikeService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\PostAbstractions\\IPostLikeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:36.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IMailService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IMailService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IMailService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IMailService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:34.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\CommentService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\CommentService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\CommentService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\CommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:22.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IFollowerService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IFollowerService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IFollowerService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IFollowerService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IFollowerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:34:15.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICommentLikeService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\ICommentLikeService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\ICommentLikeService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\ICommentLikeService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\ICommentLikeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:33:51.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\ICommentService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\ICommentService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\ICommentService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\ICommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:33:49.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IBlockService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IBlockService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IBlockService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IBlockService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IBlockService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:33:48.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CommentLikeService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\CommentLikeService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\CommentLikeService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\CommentLikeService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\CommentLikeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:33:44.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BlockService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\BlockService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\BlockService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\BlockService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\BlockService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:32:39.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Abstractions\\IAuthenticationService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Abstractions\\IAuthenticationService.cs",
+              "RelativeToolTip": "Snapora.Application\\Abstractions\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:32:16.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Implementations\\AuthenticationService.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Implementations\\AuthenticationService.cs",
+              "RelativeToolTip": "Snapora.Application\\Implementations\\AuthenticationService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:31:54.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Globals.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Globals.cs",
+              "RelativeDocumentMoniker": "Snapora.Application\\Globals.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.Application\\Globals.cs",
+              "RelativeToolTip": "Snapora.Application\\Globals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:31:34.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Snapora.API\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Snapora.API\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:11:09.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BlocksController.cs",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Controllers\\BlocksController.cs",
+              "RelativeDocumentMoniker": "Snapora.API\\Controllers\\BlocksController.cs",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\Controllers\\BlocksController.cs",
+              "RelativeToolTip": "Snapora.API\\Controllers\\BlocksController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:20:09.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Snapora.API\\appsettings.json",
+              "ToolTip": "F:\\2-back-end\\SnaporaSolution\\Backend\\Snapora.API\\appsettings.json",
+              "RelativeToolTip": "Snapora.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T07:15:25.316Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

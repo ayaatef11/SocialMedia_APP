@@ -1,0 +1,580 @@
+[
+  {
+    "ContainingType": "SocialMedia.API.Controllers.AuthenticationController",
+    "Method": "RequestForgotPassword",
+    "RelativePath": "api/Authentication/Forgot-Password-Request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.AuthenticationController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Authentication/Forgot-Password-Reset",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forgotPassword",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Authentication.ForgotPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/Authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Authentication.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.AuthenticationController",
+    "Method": "SignUp",
+    "RelativePath": "api/Authentication/signUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Authentication.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.BlocksController",
+    "Method": "Block",
+    "RelativePath": "api/Blocks/block",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "block",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Block.BlockDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.BlocksController",
+    "Method": "GetBlockedUser",
+    "RelativePath": "api/Blocks/GetBlockedUsers/{BlockerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BlockerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.BlocksController",
+    "Method": "UnBlock",
+    "RelativePath": "api/Blocks/unblock",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "block",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Block.BlockDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "Add",
+    "RelativePath": "api/Comment/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comment",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Comment.AddCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "Delete",
+    "RelativePath": "api/Comment/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "Dislike",
+    "RelativePath": "api/Comment/dislike",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dislikeComment",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Comment.LikeCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "Edit",
+    "RelativePath": "api/Comment/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comment",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Comment.EditCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "Like",
+    "RelativePath": "api/Comment/like",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "likeComment",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Comment.LikeCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowController",
+    "Method": "Accept",
+    "RelativePath": "api/Follow/accept",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "follow",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Followers.FollowDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowController",
+    "Method": "Get",
+    "RelativePath": "api/Follow/Get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowController",
+    "Method": "Reject",
+    "RelativePath": "api/Follow/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "follow",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Followers.FollowDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowController",
+    "Method": "SendRequest",
+    "RelativePath": "api/Follow/request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "follow",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Followers.FollowDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.FollowController",
+    "Method": "UnFollow",
+    "RelativePath": "api/Follow/unfollow",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "follow",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Followers.FollowDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.LikeController",
+    "Method": "Dislike",
+    "RelativePath": "api/Like/dislike",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "like",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Like.DisLikeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.LikeController",
+    "Method": "Like",
+    "RelativePath": "api/Like/like",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "like",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Like.LikeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "Delete",
+    "RelativePath": "api/post/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "Add",
+    "RelativePath": "api/post/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Post.CreatePostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetComments",
+    "RelativePath": "api/post/comments/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "Update",
+    "RelativePath": "api/post/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Post.UpdatePostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/post/user/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.ProfileController",
+    "Method": "Edit",
+    "RelativePath": "api/Profile/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Website",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "BackgroundImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.SavePostController",
+    "Method": "Get",
+    "RelativePath": "api/SavePost/Get/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.SavePostController",
+    "Method": "Save",
+    "RelativePath": "api/SavePost/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "savePost",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.SavePosts.SavePostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.SavePostController",
+    "Method": "UnSave",
+    "RelativePath": "api/SavePost/UnSave",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "savePost",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.SavePosts.SavePostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.ShareController",
+    "Method": "Revoke",
+    "RelativePath": "api/Share/revoke",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "share",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Share.RevokeShareDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.ShareController",
+    "Method": "Start",
+    "RelativePath": "api/Share/Start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "share",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Share.StartShareDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "Add",
+    "RelativePath": "api/Story/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Video",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "Delete",
+    "RelativePath": "api/Story/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "story",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Story.DeleteStoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "Get",
+    "RelativePath": "api/Story/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

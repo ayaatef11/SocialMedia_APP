@@ -20,6 +20,9 @@
     <ProjectReference Include="..\Snapora.Application\SocialMedia.Application.csproj" />
     <ProjectReference Include="..\Snapora.Core\SocialMedia.Core.csproj" />
     <ProjectReference Include="..\Snapora.Infrastructure\SocialMedia.Infrastructure.csproj" />
+    <ProjectReference Include="..\SocialMedia.Application\SocialMedia.Application.csproj" />
+    <ProjectReference Include="..\SocialMedia.Core\SocialMedia.Core.csproj" />
+    <ProjectReference Include="..\SocialMedia.Infrastructure\SocialMedia.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

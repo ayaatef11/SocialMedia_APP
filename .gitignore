@@ -1,0 +1,19 @@
+# Angular specific
+Frontend/.angular/cache
+dist/
+tmp/
+*.js.map
+*.js
+*.d.ts
+node_modules/
+
+# IDE specific
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+migrations/
+.vs/

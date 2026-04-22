@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Infrastructure.Domain.Entities.Business.Profiles;
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Context;
 namespace SocialMedia.API.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class UserController(AppdbContext _context) : ControllerBase
-{ 
+{
+    [HttpPost("report")]
     public async Task<IActionResult>ReportUser(Guid userId,Guid reporterId)
     {
         var user = await _context.Users.FindAsync(userId);
@@ -19,6 +21,7 @@ public class UserController(AppdbContext _context) : ControllerBase
         await _context.SaveChangesAsync();
         return Ok();
     }
+    [HttpPost("suggest")]
     public async Task<IActionResult> SuggestUser(Guid userId)
     {
         var followingIds = await _context.Follows
@@ -35,6 +38,7 @@ public class UserController(AppdbContext _context) : ControllerBase
             .ToListAsync();
         return Ok(suggestions);
     }
+    [HttpGet("search")]
     public async Task<IActionResult> SearchUser(string keyword)
     {
         var users = _context.Users.Where(u => u.FullName.Contains(keyword) || u.Location.Contains(keyword) || u.UserName.Contains(keyword) || u.Email.Contains(keyword)).ToList();

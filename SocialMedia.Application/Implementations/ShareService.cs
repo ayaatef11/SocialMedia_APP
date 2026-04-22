@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SocialMedia.Application.Abstractions.PostAbstractions;
+using SocialMedia.Core.Context;
 
 namespace SocialMedia.Application.Implementations;
 public class ShareService(AppdbContext _context) :  ISharePostService
@@ -30,23 +31,23 @@ public class ShareService(AppdbContext _context) :  ISharePostService
 
     public async ValueTask<string> Start(StartShareDTO start)
     {
-        var _post = await _context.Posts.SingleOrDefaultAsync(x => x.Id == start.PostId);
-        if (_post == null)
+        var post = await _context.Posts.SingleOrDefaultAsync(x => x.Id == start.PostId);
+        if (post == null)
             return "PostNF";
 
-        var _user = await _context.Users.SingleOrDefaultAsync(x => x.Id == start.UserId);
-        if (_user == null)
+        var user = await _context.Users.SingleOrDefaultAsync(x => x.Id == start.UserId);
+        if (user == null)
             return "UserNF";
 
-        var _share = new Share()
+        var share = new Share()
         {
             PostId = start.PostId,
             CreatedAt = DateTime.UtcNow,
             SocialMediaUserId = start.UserId
         };
-
-        _post.ShareCount++;
-        _user.Posts.Add(_post);
+        _context.Shares.Add(share);
+        post.ShareCount++;
+        _context.Posts.Update(post);
         var shareOperation = await _context.SaveChangesAsync();
 
         return shareOperation > 0 ?

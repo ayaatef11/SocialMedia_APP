@@ -1,39 +1,46 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using SocialMedia.Application.Abstractions.PostAbstractions;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Context;
+using SocialMedia.Core.Domain.DTOs.Responses;
 
 namespace SocialMedia.Application.Implementations;
-public class SavePostService (AppdbContext _context) :ISavePostService
+public class SavePostService (AppdbContext _context,IMapper _mapper) :ISavePostService
 { 
-    public async ValueTask<IEnumerable<Post>> GetPosts(Guid userId)
+    public async ValueTask<IEnumerable<PostResponse>> GetPosts(Guid userId)
     {
-        var posts = await _context.SavePosts
-            .Where(x => x.UserId == userId)
-            .Select(x => x.Post)
-            .ToListAsync();
+        var posts = await _context.Posts
+          .Where(x => x.IsSaved == true && x.SaverIds != null)
+          .ToListAsync();
 
-        return posts;
+        var postFiltered=posts.Where(x =>
+        {
+            var saverIds =JsonHelper.ConvertToList(x.SaverIds);
+
+            return saverIds.Contains(userId);
+        });
+        var result = _mapper.Map<List<PostResponse>>(postFiltered);
+        return result;
     }
 
     public async ValueTask<string> SaveAsync(SavePostDTO savePost)
     {
-        var user = await _context.Users.
-            SingleOrDefaultAsync(x => x.Id == savePost.UserId);
+        var user = await _context.Users.SingleOrDefaultAsync(x => x.Id == savePost.UserId);
         if (user == null)
             return "User Not Found Or Inviald User Id";
 
-        var post = await _context.Posts
-            .SingleOrDefaultAsync(x => x.Id == savePost.PostId);
+        var post = await _context.Posts.SingleOrDefaultAsync(x => x.Id == savePost.PostId);
         if (post == null)
             return "Post Not Found Or Inviald Post Id";
+        var saverIds = JsonHelper.ConvertToList(post.SaverIds);
 
-        var savedPost = new SavePost()
-        {
-            UserId = savePost.UserId,
-            PostId = savePost.PostId,
-        };
+        if (!saverIds.Contains(savePost.UserId))
+            saverIds.Add(savePost.UserId);
 
-        await _context.SavePosts.AddAsync(savedPost);
+        post.SaverIds = JsonHelper.ConvertToString(saverIds);
+        post.IsSaved = true;
+       
+
+         _context.Posts.Update(post);
         var saveOperation = await _context.SaveChangesAsync();
         return saveOperation > 0 ?
             "Successfully" :
@@ -52,11 +59,16 @@ public class SavePostService (AppdbContext _context) :ISavePostService
         if (post == null)
             return "Post Not Found Or Inviald Post Id";
 
-        var savedPost = await _context.SavePosts.SingleOrDefaultAsync(x => x.PostId == savePost.PostId);
-        if (savedPost == null)
-            return "Post Not Saved";
+        var saverIds = JsonHelper.ConvertToList(post.SaverIds);
 
-        _context.SavePosts.Remove(savedPost);
+        saverIds.Remove(savePost.UserId);
+
+        post.SaverIds = JsonHelper.ConvertToString(saverIds);
+
+        if (saverIds.Count == 0)
+            post.IsSaved = false;
+
+        _context.Posts.Update(post);
         var deleteOperation = await _context.SaveChangesAsync();
         return deleteOperation > 0 ?
             "Successfully" :

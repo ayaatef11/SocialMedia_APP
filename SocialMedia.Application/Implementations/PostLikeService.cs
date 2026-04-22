@@ -1,18 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using SocialMedia.Application.Abstractions.PostAbstractions;
+using SocialMedia.Core.Context;
 using SocialMedia.Infrastructure.Domain.DTOs.Like;
 namespace SocialMedia.Application.Implementations;
 public class PostLikeService(AppdbContext _context) :   IPostLikeService
 {
     public async ValueTask<string> DisLikeAsync(DisLikeDTO like)
     {
-        var _like = await _context.PostLike.FirstOrDefaultAsync(x => x.Id == like.Id);
+        var _like = await _context.PostLike.FirstOrDefaultAsync(x => x.PostId == like.PostId && x.SocialMediaUserId ==like.UserId);
         if (_like == null)
             return "LikeNotFound";
 
         var _post = await _context.Posts.FirstOrDefaultAsync(x => x.Id == like.PostId);
-        if (_post != null)
+        if (_post == null)
             return "PostNotFound";
 
         _post.ReactsCount--;

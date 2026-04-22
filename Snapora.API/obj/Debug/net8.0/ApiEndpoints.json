@@ -113,6 +113,27 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.CommentController",
+    "Method": "GetComments",
+    "RelativePath": "api/Comment/{postId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "postId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.CommentController",
     "Method": "Add",
     "RelativePath": "api/Comment/add",
     "HttpMethod": "POST",
@@ -328,25 +349,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "post",
-        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Post.CreatePostDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SocialMedia.API.Controllers.PostController",
-    "Method": "GetComments",
-    "RelativePath": "api/post/comments/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+        "Name": "FeelingState",
+        "Type": "System.String",
+        "IsRequired": false
+      },
       {
-        "Name": "id",
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SocialMediaUserId",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
+      },
+      {
+        "Name": "Media",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -369,7 +394,97 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.PostController",
-    "Method": "GetByUserId",
+    "Method": "GetAllPosts",
+    "RelativePath": "api/post/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "HidePost",
+    "RelativePath": "api/post/hide-post",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetLikesCount",
+    "RelativePath": "api/post/likes-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetSharesCount",
+    "RelativePath": "api/post/shares-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "SearchForPost",
+    "RelativePath": "api/post/show-posts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetTrendingPosts",
+    "RelativePath": "api/post/trending-posts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.PostController",
+    "Method": "GetPostsForUser",
     "RelativePath": "api/post/user/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -435,15 +550,63 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SocialMedia.API.Controllers.SavePostController",
-    "Method": "Get",
-    "RelativePath": "api/SavePost/Get/{Id}",
+    "ContainingType": "SocialMedia.API.Controllers.ProfileController",
+    "Method": "GetFollowers",
+    "RelativePath": "api/Profile/followers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.ProfileController",
+    "Method": "GetFollowing",
+    "RelativePath": "api/Profile/following",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.ProfileController",
+    "Method": "ViewProfile",
+    "RelativePath": "api/Profile/view",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.SavePostController",
+    "Method": "Get",
+    "RelativePath": "api/SavePost/Get/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
         "Type": "System.Guid",
         "IsRequired": true
       }
@@ -547,6 +710,43 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "CommentToStory",
+    "RelativePath": "api/Story/add-comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comment",
+        "Type": "SocialMedia.Infrastructure.Domain.DTOs.Comment.AddCommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "ReactToStory",
+    "RelativePath": "api/Story/add-react",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "storyId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
     "Method": "Delete",
     "RelativePath": "api/Story/delete",
     "HttpMethod": "DELETE",
@@ -563,6 +763,43 @@
   },
   {
     "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "GetAllStories",
+    "RelativePath": "api/Story/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
+    "Method": "GetViewersForStory",
+    "RelativePath": "api/Story/get-viewers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "storyId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.StoryController",
     "Method": "Get",
     "RelativePath": "api/Story/get/{id}",
     "HttpMethod": "GET",
@@ -573,6 +810,59 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.UserController",
+    "Method": "ReportUser",
+    "RelativePath": "api/User/report",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "reporterId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.UserController",
+    "Method": "SearchUser",
+    "RelativePath": "api/User/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMedia.API.Controllers.UserController",
+    "Method": "SuggestUser",
+    "RelativePath": "api/User/suggest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

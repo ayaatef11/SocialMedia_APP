@@ -1,7 +1,9 @@
-﻿namespace SocialMedia.Application.Abstractions.PostAbstractions;
+﻿using SocialMedia.Core.Domain.DTOs.Responses;
+
+namespace SocialMedia.Application.Abstractions.PostAbstractions;
 public interface ISavePostService  
 {
     ValueTask<string> SaveAsync(SavePostDTO savePost);
-    ValueTask<IEnumerable<Post>> GetPosts(Guid userId);
+    ValueTask<IEnumerable<PostResponse>> GetPosts(Guid userId);
     ValueTask<string> UnSaveAsync(SavePostDTO savePost);
 }

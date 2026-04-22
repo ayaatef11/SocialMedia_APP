@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SocialMedia.Core.Context;
 
 namespace SocialMedia.Application.Helpers.Background;
 public class StoryCleanupService(IServiceProvider _serviceProvider) : BackgroundService

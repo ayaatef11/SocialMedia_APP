@@ -1,9 +1,11 @@
-﻿namespace SocialMedia.Application.Abstractions.PostAbstractions;
+﻿using SocialMedia.Core.Domain.DTOs.Responses;
+
+namespace SocialMedia.Application.Abstractions.PostAbstractions;
 public interface IPostService  
 {
-    ValueTask<IEnumerable<Post>> GetUserPostsAsync(Guid id);
+    ValueTask<IEnumerable<PostResponse>> GetUserPostsAsync(Guid id);
     ValueTask<Post?> SearchForPost(string keyword);
-    ValueTask<IEnumerable<Post>> GetAllPosts(Guid userId);
+    ValueTask<IEnumerable<PostResponse>> GetAllPosts(Guid userId);
     ValueTask<IEnumerable<Post>> GetTrendingPosts();
     ValueTask<long> GetSharesCount(Guid postId);
     ValueTask<long> GetLikesCount(Guid postId);

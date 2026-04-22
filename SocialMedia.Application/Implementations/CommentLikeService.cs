@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using SocialMedia.Core.Context;
 
 namespace SocialMedia.Application.Implementations;
 public class CommentLikeService(AppdbContext _context) :  ICommentLikeService

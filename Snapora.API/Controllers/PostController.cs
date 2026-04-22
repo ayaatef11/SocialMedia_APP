@@ -10,6 +10,7 @@ public partial class PostController(IPostService _PostService,IMainRepository<Po
     {
         var _post = new Post()
         {
+            Id=Guid.NewGuid(),
             ShareCount = 0,
             ReactsCount = 0,
             FeelingState = 0,
@@ -18,7 +19,9 @@ public partial class PostController(IPostService _PostService,IMainRepository<Po
             Title = post.Title,
             CreatedAt = DateTime.UtcNow,
             SocialMediaUserId = post.SocialMediaUserId,
-            MediaUrls=(await Task.WhenAll(post.Media.Select(m=>PhotoHelper.Upload_photo(m)))).ToList()
+            MediaUrls= System.Text.Json.JsonSerializer.Serialize(
+    await Task.WhenAll(post.Media.Select(m => PhotoHelper.Upload_photo(m)))
+)
         };
 
         var addPostOperation = await _PostRepository.CreateAsync(_post);
@@ -56,9 +59,9 @@ public partial class PostController(IPostService _PostService,IMainRepository<Po
         if (id == Guid.Empty)
             return BadRequest("Invalid User ID");
 
-        var posts = await _PostService.GetUserPostsAsync(id);
+        var result = await _PostService.GetUserPostsAsync(id);
 
-        return posts != null ? Ok(posts) :
+        return result != null ? Ok(result) :
             NotFound(new Result
         {
             Message = "No Posts Found for this User"

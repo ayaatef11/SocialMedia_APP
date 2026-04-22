@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,12 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Snapora.Application\SocialMedia.Application.csproj" />
-    <ProjectReference Include="..\Snapora.Core\SocialMedia.Core.csproj" />
-    <ProjectReference Include="..\Snapora.Infrastructure\SocialMedia.Infrastructure.csproj" />
     <ProjectReference Include="..\SocialMedia.Application\SocialMedia.Application.csproj" />
-    <ProjectReference Include="..\SocialMedia.Core\SocialMedia.Core.csproj" />
-    <ProjectReference Include="..\SocialMedia.Infrastructure\SocialMedia.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

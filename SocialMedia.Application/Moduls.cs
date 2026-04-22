@@ -9,15 +9,22 @@ public static class Moduls
     public static void AddApplicationService(this IServiceCollection service)
     {
         service.AddTransient<IUnitOfWork, UnitOfWork>();
+
         service.AddTransient<IMailService, MailService>();
+
         service.AddTransient<IPostService, PostService>();
-        service.AddTransient<IBlockService, BlockService>();
+        service.AddTransient<IPostLikeService, PostLikeService>();
+        service.AddTransient<ISavePostService, SavePostService>();
         service.AddTransient<ISharePostService, ShareService>();
+
         service.AddTransient<ICommentService, CommentService>();
         service.AddTransient<IProfileService, ProfileService>();
-        service.AddTransient<IPostLikeService, PostLikeService>();
+        service.AddTransient<IBlockService, BlockService>();
+
         service.AddTransient<ICommentLikeService, CommentLikeService>();
         service.AddTransient<IAuthenticationService, AuthenticationService>();
+        service.AddTransient<IFollowerService, FollowerService>();
+        service.AddTransient<IStoryService, StoryService>();
     }
 }
 

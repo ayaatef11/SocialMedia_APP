@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using SocialMedia.Core.Context;
+using SocialMedia.Core.Domain.Entities.Business.Profiles;
 
 namespace SocialMedia.Application.Implementations;
 public class AuthenticationService(UserManager<User> _userManager, IConfiguration _configuration, AppdbContext _context,
@@ -22,7 +24,7 @@ public class AuthenticationService(UserManager<User> _userManager, IConfiguratio
         if (!addOperation.Succeeded)
             return addOperation.Errors.Select(e => e.Description).ToList();
 
-        var _profile = new Profile()
+        var _profile = new UserProfile()
         {
             PostCount = 0,
             FollowerCount = 0,

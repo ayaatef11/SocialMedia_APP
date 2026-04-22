@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using SocialMedia.Infrastructure.Persistence.Context;
+using SocialMedia.Core.Context;
 using System.Data.Common;
 using static Dapper.SqlMapper;
 
@@ -26,11 +26,20 @@ public class MainRepository<TEnity> : IMainRepository<TEnity> where TEnity : cla
     public async ValueTask<string> CreateAsync(TEnity entity)
     {
         var tableName = typeof(TEnity).Name;
-        var properities = typeof(TEnity).GetProperties();
-        var columns = string.Join(",", properities.Select(p => p.Name));
-        var values = string.Join(",", properities.Select(p => "@" + p.Name));
+        var properties = typeof(TEnity).GetProperties()
+            .Where(p =>
+                p.PropertyType.IsPrimitive ||
+                p.PropertyType == typeof(string) ||
+                p.PropertyType == typeof(Guid) ||
+                p.PropertyType == typeof(DateTime) ||
+                p.PropertyType == typeof(Guid?) ||
+                p.PropertyType == typeof(int?) ||
+                p.PropertyType == typeof(long?)
+            );
+        var columns = string.Join(",", properties.Select(p => p.Name));
+        var values = string.Join(",", properties.Select(p => "@" + p.Name));
 
-        var sql = $"INSERT INTO{tableName} ({columns})VALUES ({values}) ";
+        var sql = $"INSERT INTO {tableName} ({columns}) VALUES ({values}) ";
 
         var result = await connection.ExecuteAsync(sql, entity);
 
@@ -41,8 +50,7 @@ public class MainRepository<TEnity> : IMainRepository<TEnity> where TEnity : cla
     {
         var tableName = typeof(TEnity).Name;
         var sql = $"DELETE FROM {tableName} WHERE Id =@Id";
-        var result = await connection.ExecuteAsync(sql, id);
-        //what if it is not found?
+        var result = await connection.ExecuteAsync(sql, new { Id = id });
         return result > 0 ? "Deleted" : "Failed";
     }
 
@@ -61,9 +69,27 @@ public class MainRepository<TEnity> : IMainRepository<TEnity> where TEnity : cla
     public async ValueTask<string> UpdateAsync(TEnity entity, Guid id)
     {
         var tableName = typeof(TEnity).Name;
-        var sql = $"UPDATE {tableName} where Id=@Id";
-        var oldEntity = await _dbSet.FindAsync(id);
-        var result = await connection.ExecuteAsync(sql, entity);
+
+        var properties = typeof(TEnity)
+            .GetProperties()
+            .Where(p => (p.Name != "Id") &&
+            (p.PropertyType.IsPrimitive ||
+                p.PropertyType == typeof(string) ||
+                p.PropertyType == typeof(Guid) ||
+                p.PropertyType == typeof(DateTime) ||
+                p.PropertyType == typeof(Guid?) ||
+                p.PropertyType == typeof(int?) ||
+                p.PropertyType == typeof(long?)));
+
+        var setClause = string.Join(", ", properties.Select(p => $"{p.Name} = @{p.Name}"));
+
+        var sql = $"UPDATE {tableName} SET {setClause} WHERE Id = @Id";
+
+        var parameters = new DynamicParameters(entity);
+        parameters.Add("Id", id);
+
+        var result = await connection.ExecuteAsync(sql, parameters);
+
         return result > 0 ? "Updated" : "Failed";
     }
 

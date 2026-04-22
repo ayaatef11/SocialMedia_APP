@@ -8,13 +8,15 @@ global using SocialMedia.Infrastructure.Domain.DTOs.Authentication;
 global using SocialMedia.Application.Abstractions;
 global using SocialMedia.Application.Helpers.Messages;
 global using SocialMedia.Application.Helpers.Token;
-global using SocialMedia.Infrastructure.Persistence.Context;
+global using SocialMedia.Core.Context;
 global using SocialMedia.Application.Helpers.Options;
 global using SocialMedia.Infrastructure.Domain.DTOs.Followers;
 global using SocialMedia.Infrastructure.Domain.Enums;
-global using SocialMedia.Infrastructure.Domain.DTOs.Profile;
+global using SocialMedia.Infrastructure.Domain.DTOs.Profiles;
 global using SocialMedia.Infrastructure.Domain.DTOs.SavePosts;
 global using SocialMedia.Infrastructure.Domain.DTOs.Share;
 global using SocialMedia.Infrastructure.Domain.DTOs.Story;
 global using SocialMedia.Application.Helpers.Token.JWTOptions;
-
+global using SocialMedia.Core.Domain.DTOs.Responses;
+global using SocialMedia.Application.Abstractions.PostAbstractions;
+global using SocialMedia.Application.Helpers.General;

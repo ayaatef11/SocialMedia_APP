@@ -1,17 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using SocialMedia.Application.Abstractions.PostAbstractions;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore; 
+using SocialMedia.Core.Domain.DTOs.Responses;
 
 namespace SocialMedia.Application.Implementations;
-public class PostService : IPostService
-{
-    private readonly AppdbContext _context;
-    public PostService(AppdbContext context)  
-    {
-        this._context = context;
-    }
-
-   
+public class PostService(AppdbContext _context, IMapper _mapper) : IPostService
+{   
     public async ValueTask<Post?>SearchForPost(string keyword)
     {
         var post=await _context.Posts.FirstOrDefaultAsync(x => x.Title.Contains( keyword) ||(x.Text!=null && x.Text.Contains(keyword)));
@@ -41,24 +34,31 @@ public class PostService : IPostService
         var likesCount = await _context.Posts.Where(s => s.Id == postId).Select(s => s.ReactsCount).FirstOrDefaultAsync();
         return likesCount;
     }
-    public async ValueTask<IEnumerable<Post>> GetUserPostsAsync(Guid id)
+    public async ValueTask<IEnumerable<PostResponse>> GetUserPostsAsync(Guid id)
     {
         var user = await _context.Users
             .Include(x => x.Posts)
             .SingleOrDefaultAsync(x => x.Id == id);
 
         if (user == null)
-            return new List<Post>();
+            return new List<PostResponse>();
 
-        return user.Posts.ToList();
+        var shareIds = await _context.Shares.Where(x => x.SocialMediaUserId == id).Select(x => x.PostId).ToListAsync();
+        var postShared = await _context.Posts.Where(x => shareIds.Contains(x.Id)).ToListAsync();
+        var finalPosts = user.Posts.ToList();
+        finalPosts.AddRange(postShared);
+        var result = _mapper.Map<List<PostResponse>>(finalPosts);
+        return result;
     }
-    public async ValueTask<IEnumerable<Post>> GetAllPosts(Guid userId)
+    public async ValueTask<IEnumerable<PostResponse>> GetAllPosts(Guid userId)
     {
         var user=await _context.Users.Include(u=>u.Following).FirstOrDefaultAsync(u=>u.Id== userId);
         if (user == null) return null;
-        var posts= await _context.Posts.Where(s=>user.Following.Select(f=>f.Id).Contains(s.SocialMediaUserId))
+        var posts= await _context.Posts.Where(s=>user.Following.Select(f=>f.FollowerId).Contains(s.SocialMediaUserId) && s.IsHidden ==false)
             .ToListAsync();
-        return posts;
+        var result = _mapper.Map<List<PostResponse>>(posts);
+
+        return result;
     }
     public async ValueTask HidePost(Guid postId)
     {

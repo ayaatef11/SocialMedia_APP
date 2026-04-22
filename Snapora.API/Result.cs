@@ -1,7 +1,7 @@
 ﻿namespace SocialMedia.API;
 public class Result
 {
-    public string? Message;
-    public string? Code;
+    public string? Message { get; set; }
+    public string? Code {  get; set; }
 }
 

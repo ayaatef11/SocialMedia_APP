@@ -13,17 +13,20 @@ public class SavePostController(ISavePostService _SavePostService) : ControllerB
 
         var saveOperation = await _SavePostService.SaveAsync(savePost);
         return saveOperation == "Successfully" ?
-            Ok(saveOperation) :
+            Ok(new Result
+            {
+                Message = "Post saved successfully"
+            }) :
             BadRequest(saveOperation);
     }
 
-    [HttpGet("Get/{Id}")]
-    public async Task<IActionResult> Get(Guid Id)
+    [HttpGet("Get/{userId}")]
+    public async Task<IActionResult> Get(Guid userId)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var posts = await _SavePostService.GetPosts(Id);
+        var posts = await _SavePostService.GetPosts(userId);
         return posts.Any() ?
             Ok(posts) :
             NotFound(new Result

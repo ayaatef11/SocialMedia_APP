@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Context;
 
 namespace SocialMedia.Application.Implementations;
 public class CommentService(AppdbContext _context) :  ICommentService

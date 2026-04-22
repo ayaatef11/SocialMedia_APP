@@ -4,26 +4,29 @@ namespace SocialMedia.API.Controllers;
 [Route("api/Story")]
 public class StoryController(IStoryService _StoryService) : ControllerBase
 {
+    [HttpGet("get-all")]
     public async Task<IActionResult> GetAllStories(Guid userId)
     {
-        var user=_
-        var stories
+        var stories=await _StoryService.GetAllStories(userId);
+        return Ok(stories);
     }
+    [HttpGet("get-viewers")]
     public async Task<IActionResult>GetViewersForStory(Guid userId,Guid storyId)
     {
-
+        var viewers = await _StoryService.GetViewersForStory(userId,storyId);
+        return Ok(viewers);
     }
+    [HttpPost("add-react")]
     public async Task<IActionResult>ReactToStory(Guid userId, Guid storyId)
     {
-
+        await _StoryService.ReactToStory(userId, storyId);
+        return Ok();
     }
-    public async Task<IActionResult>RemoveReactFromStory(Guid userId, Guid storyId)
+    [HttpPost("add-comment")]
+    public async Task<IActionResult>CommentToStory(AddCommentDTO comment)
     {
-
-    }
-    public async Task<IActionResult>CommentToStory(Guid userId,Guid storyId)
-    {
-
+        await _StoryService.CommentToStory(comment);
+        return Ok();
     } 
     [HttpPost("add")]
     public async Task<IActionResult> Add(UploadStoryDTO story)//add signalr

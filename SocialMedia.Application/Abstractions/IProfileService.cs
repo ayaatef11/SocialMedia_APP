@@ -1,8 +1,8 @@
 ﻿namespace SocialMedia.Application.Abstractions;
 public interface IProfileService 
 {
-    Task<IEnumerable<Follow>> GetFollowers(Guid userId);
-    Task<IEnumerable<Follow>> GetFollowing(Guid userId);
-    Task<Profile> ViewProfile(Guid userId);
+    Task<IEnumerable<FollowResponse>> GetFollowers(Guid userId);
+    Task<IEnumerable<FollowResponse>> GetFollowing(Guid userId);
+    Task<ProfileResponse> ViewProfile(Guid userId);
     ValueTask<string> EditAsync(EditProfileDTO profile);
 }

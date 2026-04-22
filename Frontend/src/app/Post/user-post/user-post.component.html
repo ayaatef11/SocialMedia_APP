@@ -1,0 +1,25 @@
+<div class="status-feed">
+    <div class="card mb-3" *ngFor="let status of statusFeed">
+      <div class="card-header bg-white d-flex align-items-center">
+        <img [src]="status.user.profileImage" class="rounded-circle me-2" width="40" height="40" alt="Profile">
+        <div>
+          <h6 class="mb-0">{{status.user.username}}</h6>
+          <small class="text-muted">{{status.timestamp  }}</small>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p>{{status.text}}</p>
+        <img *ngIf="status.image" [src]="status.image" class="img-fluid rounded mb-2" alt="Status Image">
+      </div>
+
+      <div class="card-footer bg-white">
+        <button class="btn btn-sm btn-outline-secondary me-2">
+          <i class="bi bi-heart"></i> {{status.likes}}
+        </button>
+        <button class="btn btn-sm btn-outline-secondary">
+          <i class="bi bi-chat"></i> Comment
+        </button>
+      </div>
+    </div>
+  </div>

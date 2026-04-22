@@ -1,0 +1,25 @@
+.settings-nav {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.nav-pills .nav-link {
+  color: var(--logo-dark-green);
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #f1f5f9;
+  color: var(--logo-bubble-dark);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--logo-dark-green);
+  color: white;
+}

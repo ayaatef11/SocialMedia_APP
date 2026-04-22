@@ -1,0 +1,35 @@
+.settings-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+.settings-card .card-header {
+  background: transparent;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.5rem;
+}
+
+.settings-card .card-body {
+  padding: 1.5rem;
+}
+
+.form-switch .form-check-input {
+  width: 3em;
+  height: 1.5em;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--logo-bubble-dark);
+  border-color: var(--logo-bubble-dark);
+}
+
+.settings-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}

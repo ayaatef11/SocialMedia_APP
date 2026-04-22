@@ -1,0 +1,67 @@
+  <div class="create-post-modal">
+      <div class="modal-header-custom">
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h5 class="modal-title-custom">Create Post</h5>
+            <button class="close-btn" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="post-content">
+            <div class="user-info">
+                <img src="profile.jpg" alt="John Doe" class="user-avatar">
+                <div class="user-details">
+                    <h6>John Doe</h6>
+                    <button class="privacy-dropdown" onclick="togglePrivacy()">
+                        <i class="fas fa-globe-americas"></i>
+                        <span id="privacyText">Public</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <textarea class="post-textarea" placeholder="What's on your mind?" ></textarea>      
+            <div class="char-counter" id="charCounter">0 / 500</div>
+            
+            <div class="uploaded-media" style="display: none;">
+                <img  src="" alt="Uploaded content">
+                <button class="remove-media" >
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="media-upload-area">
+                <div class="upload-icon">
+                    <i class="fas fa-images"></i>
+                </div>
+                <p class="upload-text">Add photos/videos</p>
+                <p class="upload-subtext">or drag and drop</p>
+            </div>
+            
+            <input type="file"   accept="image/*,video/*" multiple style="display: none;" >
+            
+            <div class="post-options">
+                <button class="option-btn photo" >
+                    <i class="fas fa-images"></i>
+                    <span>Photo/video</span>
+                </button>
+                <button class="option-btn tag">
+                    <i class="fas fa-user-tag"></i>
+                    <span>Tag people</span>
+                </button>
+                <button class="option-btn feeling">
+                    <i class="fas fa-smile"></i>
+                    <span>Feeling/activity</span>
+                </button>
+            </div>
+            
+            <div class="post-actions">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-post" >Post</button>
+            </div>
+        </div>
+    </div>
+    
+   

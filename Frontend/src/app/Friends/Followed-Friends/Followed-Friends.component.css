@@ -1,0 +1,72 @@
+        .container-custom {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+        
+
+        
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .user-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .user-item:last-child {
+            border-bottom: none;
+        }
+        
+        .username {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .handle {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .btn-follow {
+            background-color: #4285f4;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .btn-following {
+            background-color: #f1f3f4;
+            color: #5f6368;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .btn-follower {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .follows-you {
+            color: #666;
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+        
+        

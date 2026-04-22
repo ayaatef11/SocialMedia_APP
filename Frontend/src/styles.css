@@ -1,0 +1,48 @@
+:root { 
+  --bg-light: #fafafa;
+  --bg-dark: #262626;
+  --text-white: #ffffff;
+
+  --border-color: #dbdbdb;
+
+  --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+ 
+  --logo-bubble-very-light: #d3dcd8;  
+  --logo-bubble-light: #6EE7B7;
+  --logo-bubble-medium: #10B981;
+  --logo-bubble-dark: #10B981;
+  --logo-dark-green: #047857;
+
+  --logo-main-gradient: linear-gradient(180deg, 
+    var(--logo-bubble-light) 0%, 
+    var(--logo-bubble-medium) 50%, 
+    var(--logo-dark-green) 100%
+  );
+  
+  --logo-bubble-gradient: linear-gradient(135deg, 
+    var(--logo-bubble-light) 0%, 
+    var(--logo-bubble-medium) 100%
+  );
+}
+
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+   height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::selection {
+  background: var( --logo-dark-green);
+  color: white;  
+}

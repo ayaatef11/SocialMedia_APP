@@ -1,0 +1,16 @@
+<form  #signInForm="ngForm" (ngSubmit)="onSubmit()" class="container mt-4 shadow justify-content-center align-items-center ">
+  <h1 class="mb-4">Log In</h1>
+  <div class="mb-4">
+    <label class="form-label">User Name</label>
+    <input type="text" placeholder="User Name" name="userName" [(ngModel)]="userData.userName" class="form-control" required>
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label">Password</label>
+    <input type="password" placeholder="Password" name="password" [(ngModel)]="userData.password" class="form-control" required>
+  </div>
+
+  <button class="btn btn-success  w-100" type="submit">Log In</button>
+  <button type="button" class="btn btn-outline-success w-100"><i class="bi bi-google me-2"></i>Continue With Google</button>
+
+</form>

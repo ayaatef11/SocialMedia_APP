@@ -1,0 +1,115 @@
+<app-sidebar></app-sidebar>
+<div class="main-content">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- create an animation here to view the search component  -->
+            <div  class="d-flex justify-content-between align-items-center mb-4">
+                <div  class="search-box flex-grow-1 me-3">
+                    <input type="text" class="form-control border-0" placeholder="Search" #searchInput
+                        style="border-radius: 25px; background-color: var(--logo-bubble-very-light);"
+                        (keyup.enter)="onSearch()" [(ngModel)]="searchQuery">
+                </div>
+
+                <div *ngIf="isOpen" class="search-overlay" [@slideInOut]="isOpen ? 'in' : 'out'">
+                  <!-- here we will display the last searchs  -->
+                </div>
+                <div class="d-flex">
+                    <!-- Notification Icon -->
+                    <button class="btn btn-link btn-lg text-success me-2" [routerLink]="'/notifications'"
+                        routerLinkActive="active">
+                        <i class="fas fa-bell"></i>
+                    </button>
+
+                    <!-- Favorites Icon -->
+                    <!-- <button class="btn btn-link btn-lg text-success me-2" [routerLink]="'/favorites'"
+                        routerLinkActive="active">
+                        <i class="fas fa-heart"></i>
+                    </button> -->
+
+                    <!-- Messages Icon -->
+                    <button class="btn btn-link btn-lg text-success me-2" [routerLink]="'/messages'"
+                        routerLinkActive="active">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+
+                    <!-- Profile Icon -->
+                    <button class="btn btn-link btn-lg text-success" [routerLink]="'/home/profile'"
+                        routerLinkActive="active">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="d-flex mb-4 overflow-auto">
+
+                <div class="text-center me-3">
+                    <div class="story-circle">
+                        <img src="https://picsum.photos/60/60?random=1" alt="Story">
+                    </div>
+                    <div class="story-username">username</div>
+                </div>
+
+                <div class="text-center me-3">
+                    <div class="story-circle add-story">
+                        <div class="story-placeholder">
+                            <i class="fas fa-plus text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="story-username">More</div>
+                </div>
+            </div>
+
+            <div class="post-card mb-4">
+                <div class="p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="https://picsum.photos/40/40?random=user" alt="User" class="user-avatar me-3">
+                        <input type="text" class="form-control border-0 bg-light" placeholder="What's on your mind?"
+                            style="border-radius: 25px;">
+                        <button class="btn btn-link ms-2" style="color:var(--logo-bubble-medium)"><i
+                                class="fas fa-camera"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="post-card">
+                <div class="post-header d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="https://picsum.photos/40/40?random=2" alt="User" class="user-avatar me-3">
+                        <strong>username</strong>
+                    </div>
+                    <button class="btn btn-link text-muted"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <img src="https://picsum.photos/600/400?random=post1" alt="Post" class="post-image">
+                <div class="post-actions">
+                    <button class="btn"><i class="far fa-heart"></i></button>
+                    <button class="btn"><i class="far fa-comment"></i></button>
+                    <button class="btn"><i class="far fa-share-square"></i></button>
+                    <span class="float-end text-muted">12 likes</span>
+                </div>
+                <div class="px-3 pb-3">
+                    <p class="mb-1"><strong>username</strong> Cras sit amet nibh libero, in gravida...</p>
+                    <a href="#" class="text-muted small">View all 3 comments</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="suggestions-card">
+                <h6 class="mb-3">Suggestions for you</h6>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                        <img src="https://picsum.photos/40/40?random=5" alt="User" class="user-avatar me-3">
+                        <strong>username</strong>
+                    </div>
+                    <button class="aya-button" (click)="follow()">Follow</button>
+                </div>
+
+                <div class="suggestions-card">
+                    <h6 class="mb-3" style="font-size: 20px;">Trending</h6>
+                    <a href="#" class="trending-tag">#travel <i class="fas fa-plus float-end"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
